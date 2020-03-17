@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 struct MLBTeam {
     let teamName:String?
+    let teamLogo:UIImage?
     let stadiumName:String?
 }

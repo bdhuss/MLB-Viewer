@@ -36,6 +36,7 @@ class MLBViewController: UIViewController, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "mlbTeamCell", for: indexPath)
+        cell.imageView?.image = mlbTeams[indexPath.row].teamLogo
         cell.textLabel?.text = mlbTeams[indexPath.row].teamName
         return cell
     }
