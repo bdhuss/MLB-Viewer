@@ -11,14 +11,19 @@ import UIKit
 class MLBViewController: UIViewController, UITableViewDataSource {
     
     private let mlbTeams = MLBAPI.getMLBTeams()
-    let teamsTableView = UITableView()
+    let teamsTableView = UITableView(frame: CGRect(x: 0, y: 0, width: CGFloat(UIScreen.main.bounds.width), height: CGFloat(UIScreen.main.bounds.height)), style: .plain)
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         view.backgroundColor = .blue
         
-        teamsTableView.frame = CGRect(x: 0, y: 0, width: CGFloat(view.bounds.width), height: CGFloat(view.bounds.height))
+//        teamsTableView.frame = CGRect(x: 0, y: 0, width: CGFloat(view.bounds.width), height: CGFloat(view.bounds.height))
+        let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
+        headerLabel.text = "MLB Teams"
+        headerLabel.backgroundColor = .gray
+        headerLabel.textAlignment = .center
+        teamsTableView.tableHeaderView = headerLabel
         teamsTableView.dataSource = self
         teamsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "mlbTeamCell")
         

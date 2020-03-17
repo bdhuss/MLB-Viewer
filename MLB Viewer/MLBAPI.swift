@@ -12,9 +12,10 @@ class MLBAPI {
     
     static func getMLBTeams() -> [MLBTeam] {
         let mlbTeams = [
-            MLBTeam(teamName: "Nationals", stadiumName: "Nats Park"),
-            MLBTeam(teamName: "Nats", stadiumName: "N A T Park"),
-            MLBTeam(teamName: "NAT's", stadiumName: "NAT's Park")
+            MLBTeam(teamName: "National's", stadiumName: "National's Park"),
+            MLBTeam(teamName: "Red Sox", stadiumName: "Fenway Park"),
+            MLBTeam(teamName: "Yankee's", stadiumName: "Yankee's Park"),
+            MLBTeam(teamName: "Oriole's", stadiumName: "Camden Yards")
         ]
         return mlbTeams
     }
