@@ -10,7 +10,13 @@ import Foundation
 import UIKit
 
 struct MLBTeam {
-    let teamName:String?
-    let teamLogo:UIImage?
-    let stadiumName:String?
+    let teamName:String
+    let teamLogo:String
+    let stadiumName:String
+    
+    init(teamName: String, teamLogo: String, stadiumName: String) {
+        self.teamName = teamName
+        self.teamLogo = teamLogo
+        self.stadiumName = stadiumName
+    }
 }

@@ -25,8 +25,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //        window.makeKeyAndVisible()
         
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = MLBViewController()
-//        window?.rootViewController = UINavigationController(rootViewController: MLBViewController())
+//        window?.rootViewController = MLBViewController()
+        window?.rootViewController = UINavigationController(rootViewController: MLBViewController())
         window?.makeKeyAndVisible()
     }
 
