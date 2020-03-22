@@ -16,7 +16,7 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil);
         
-        self.title = "MLB Fans"
+        self.title = "MLB Teams"
     }
     
     required init?(coder: NSCoder) {
@@ -53,8 +53,10 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .blue
-        self.navigationController?.pushViewController(viewController, animated: true)
+//        let viewController = UIViewController()
+//        viewController.view.backgroundColor = .blue
+//        self.navigationController?.pushViewController(viewController, animated: true)
+        let vc = TeamViewController(bgcolor: .red)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

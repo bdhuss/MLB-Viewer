@@ -11,6 +11,7 @@
 		34A091F8240EF600001562AF /* MLBViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A091F7240EF600001562AF /* MLBViewController.swift */; };
 		34A091FC2416D4CA001562AF /* MLBTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A091FB2416D4CA001562AF /* MLBTeam.swift */; };
 		34A091FE24182D80001562AF /* MLBAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A091FD24182D80001562AF /* MLBAPI.swift */; };
+		34A0920024280A05001562AF /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A091FF24280A05001562AF /* TeamViewController.swift */; };
 		34C1FA90240D7EC200EEA889 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C1FA8F240D7EC200EEA889 /* AppDelegate.swift */; };
 		34C1FA99240D7EC200EEA889 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34C1FA98240D7EC200EEA889 /* Assets.xcassets */; };
 		34C1FA9C240D7EC200EEA889 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34C1FA9A240D7EC200EEA889 /* LaunchScreen.storyboard */; };
@@ -21,6 +22,7 @@
 		34A091F7240EF600001562AF /* MLBViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBViewController.swift; sourceTree = "<group>"; };
 		34A091FB2416D4CA001562AF /* MLBTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBTeam.swift; sourceTree = "<group>"; };
 		34A091FD24182D80001562AF /* MLBAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLBAPI.swift; sourceTree = "<group>"; };
+		34A091FF24280A05001562AF /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		34C1FA8C240D7EC200EEA889 /* MLB Viewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MLB Viewer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34C1FA8F240D7EC200EEA889 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34C1FA98240D7EC200EEA889 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				34A091FD24182D80001562AF /* MLBAPI.swift */,
 				34A091F3240D9784001562AF /* SceneDelegate.swift */,
 				34A091F7240EF600001562AF /* MLBViewController.swift */,
+				34A091FF24280A05001562AF /* TeamViewController.swift */,
 				34C1FA98240D7EC200EEA889 /* Assets.xcassets */,
 				34C1FA9A240D7EC200EEA889 /* LaunchScreen.storyboard */,
 				34C1FA9D240D7EC200EEA889 /* Info.plist */,
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34A091F8240EF600001562AF /* MLBViewController.swift in Sources */,
+				34A0920024280A05001562AF /* TeamViewController.swift in Sources */,
 				34C1FA90240D7EC200EEA889 /* AppDelegate.swift in Sources */,
 				34A091FC2416D4CA001562AF /* MLBTeam.swift in Sources */,
 				34A091FE24182D80001562AF /* MLBAPI.swift in Sources */,
