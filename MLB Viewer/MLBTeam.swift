@@ -11,11 +11,13 @@ import UIKit
 
 struct MLBTeam {
     let teamName:String
+    let city:String
     let teamLogo:String
     let stadiumName:String
     
-    init(teamName: String, teamLogo: String, stadiumName: String) {
+    init(teamName: String, city: String, teamLogo: String, stadiumName: String) {
         self.teamName = teamName
+        self.city = city
         self.teamLogo = teamLogo
         self.stadiumName = stadiumName
     }

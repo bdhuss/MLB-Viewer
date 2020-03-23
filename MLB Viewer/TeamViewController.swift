@@ -11,9 +11,9 @@ import UIKit
 
 class TeamViewController: UIViewController {
     
-    convenience init(bgcolor: UIColor) {
+    convenience init(team: MLBTeam) {
         self.init(nibName: nil, bundle: nil)
-        self.view.backgroundColor = bgcolor
+        print(team.teamName)
     }
     
     override func viewDidLoad() {

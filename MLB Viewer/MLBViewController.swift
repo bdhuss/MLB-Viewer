@@ -53,10 +53,7 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let viewController = UIViewController()
-//        viewController.view.backgroundColor = .blue
-//        self.navigationController?.pushViewController(viewController, animated: true)
-        let vc = TeamViewController(bgcolor: .red)
+        let vc = TeamViewController(team: mlbTeams[indexPath.row])
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
