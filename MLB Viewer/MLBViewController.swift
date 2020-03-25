@@ -28,12 +28,6 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
 
         view.backgroundColor = .blue
         
-//        teamsTableView.frame = CGRect(x: 0, y: 0, width: CGFloat(view.bounds.width), height: CGFloat(view.bounds.height))
-//        let headerLabel = UILabel(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 50))
-//        headerLabel.text = "MLB Teams"
-//        headerLabel.backgroundColor = .gray
-//        headerLabel.textAlignment = .center
-//        teamsTableView.tableHeaderView = headerLabel
         teamsTableView.dataSource = self
         teamsTableView.delegate = self
         teamsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "mlbTeamCell")
@@ -46,14 +40,19 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "mlbTeamCell", for: indexPath)
+        //let cell = tableView.dequeueReusableCell(withIdentifier: "mlbTeamCell", for: indexPath)
+        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "mlbTeamCell")
+        tableView.dequeueReusableCell(withIdentifier: "mlbTeamCell")
         cell.imageView?.image = UIImage(named: mlbTeams[indexPath.row].teamLogo)
         cell.textLabel?.text = mlbTeams[indexPath.row].teamName
+        cell.detailTextLabel?.text = mlbTeams[indexPath.row].city
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = TeamViewController(team: mlbTeams[indexPath.row])
+        print("\(indexPath): \(mlbTeams[indexPath.row].teamName)")
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
 }

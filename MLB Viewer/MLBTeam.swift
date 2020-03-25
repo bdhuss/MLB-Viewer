@@ -14,11 +14,13 @@ struct MLBTeam {
     let city:String
     let teamLogo:String
     let stadiumName:String
+    let stadiumImage:String
     
-    init(teamName: String, city: String, teamLogo: String, stadiumName: String) {
+    init(teamName: String, city: String, teamLogo: String, stadiumName: String, stadiumImage: String) {
         self.teamName = teamName
         self.city = city
         self.teamLogo = teamLogo
         self.stadiumName = stadiumName
+        self.stadiumImage = stadiumImage
     }
 }

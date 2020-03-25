@@ -11,9 +11,17 @@ import UIKit
 
 class TeamViewController: UIViewController {
     
-    convenience init(team: MLBTeam) {
-        self.init(nibName: nil, bundle: nil)
-        print(team.teamName)
+    private let team:MLBTeam
+    
+    init(team: MLBTeam) {
+        self.team = team
+        super.init(nibName: nil, bundle: nil)
+        
+        self.title = team.teamName
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     override func viewDidLoad() {
