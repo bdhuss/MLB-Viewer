@@ -25,8 +25,6 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        view.backgroundColor = .blue
         
         teamsTableView.dataSource = self
         teamsTableView.delegate = self
@@ -51,8 +49,6 @@ class MLBViewController: UIViewController, UITableViewDataSource, UITableViewDel
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = TeamViewController(team: mlbTeams[indexPath.row])
-        print("\(indexPath): \(mlbTeams[indexPath.row].teamName)")
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
 }
